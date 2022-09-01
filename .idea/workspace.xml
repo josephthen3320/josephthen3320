@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46d4a20c-d601-409c-9a59-2ecd9dc19b16" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/theme.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/w3.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/placeholder/blanket.png" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="439">
-              <caret line="102" column="168" lean-forward="false" selection-start-line="102" selection-start-column="168" selection-end-line="102" selection-end-column="168" />
+              <caret line="102" column="49" lean-forward="false" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#html#0;n#!!top" expanded="true" />
@@ -127,6 +126,17 @@
               <item name="josephthen3320.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="josephthen3320.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="josephthen3320.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="josephthen3320.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="josephthen3320.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="placeholder" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -138,6 +148,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Git\josephthen3320.github.io\img\placeholder" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Git\josephthen3320.github.io\css" />
     </key>
@@ -167,12 +180,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662045975070</updated>
-      <workItem from="1662045976428" duration="6976000" />
+      <workItem from="1662045976428" duration="7441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6976000" />
+    <option name="totallyTimeSpent" value="7441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
@@ -244,7 +257,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
-          <caret line="102" column="168" lean-forward="false" selection-start-line="102" selection-start-column="168" selection-end-line="102" selection-end-column="168" />
+          <caret line="102" column="49" lean-forward="false" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#1;n#html#0;n#!!top" expanded="true" />
