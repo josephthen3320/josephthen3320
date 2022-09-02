@@ -5,8 +5,23 @@
 .logo-youtube{color:#FF0000 !important;}
 .logo-orcid{color:#A6CE39 !important;}
 
-.logo-instagram-grad{background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+.logo-instagram-grad{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
     /* Also define standard property for compatibility */
     background-clip: text;
-    -webkit-text-fill-color: transparent;}
+    -webkit-text-fill-color: transparent;
+}
+
+.highlight{
+    background: linear-gradient(to right, #897ff3, #55b7f7);
+}
+
+.highlight-hover:hover{
+    background: linear-gradient(45deg, #897ff3, #55b7f7);
+    /*background: ;*/
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
