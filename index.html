@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>JosephThen</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css"><link rel="stylesheet" href="css/theme.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-<style>
+    <title>JosephThen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css"><link rel="stylesheet" href="css/theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     body, html {
         height: 100%;
@@ -63,15 +63,8 @@
     }
 
 </style>
-    <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-        });
-    </script>
+
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
 
 </head>
 <body>
@@ -241,24 +234,22 @@
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-64 highlight">
   <div class="w3-quarter w3-section">
-    <span class="w3-xxlarge counter"><b>20</b></span><br>
+    <span class="w3-xxlarge"><b class="counter">20+</b></span><br>
     Happy Partners/Clients
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xxlarge"><b>30+</b></span><br>
+    <span class="w3-xxlarge"><b class="counter2">30+</b></span><br>
     Projects Completed
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xxlarge"><b>512+</b></span><br>
+    <span class="w3-xxlarge"><b class="counter3">512+</b></span><br>
     Cups of Coffee
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xxlarge"><b class="counter">128+</b></span><br>
+    <span class="w3-xxlarge"><b class="counter4">128+</b></span><br>
     Nights Spent Coding
   </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-<script src="js/jquery.counterup.js"></script>
 
 
 <!-- Second Parallax Image with Portfolio Text -->
@@ -407,4 +398,33 @@ function toggleFunction() {
 
 
 </body>
+
+<script>
+    const counterUp = window.counterUp.default
+
+    const callback = entries => {
+        entries.forEach( entry => {
+            const el = entry.target
+            if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
+            counterUp( el, {
+                duration: 1000,
+                delay: 16,
+            } )
+            el.classList.add( 'is-visible' )
+        }
+    } )
+    }
+
+    const IO = new IntersectionObserver( callback, { threshold: 1 } )
+
+    const el = document.querySelector( '.counter' );
+    IO.observe( el );
+    const el2 = document.querySelector('.counter2');
+    IO.observe(el2);
+    const el3 = document.querySelector('.counter3');
+    IO.observe(el3);
+    const el4 = document.querySelector('.counter4');
+    IO.observe(el4);
+</script>
+
 </html>
