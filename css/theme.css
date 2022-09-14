@@ -36,8 +36,25 @@
 }
 
 .jt-theme-background {color: #000 !important; background: #e2ecf7 !important;}
-.jt-theme-background-d1 {color: #000 !important; background: #d4e0eb
-}
+.jt-theme-background-d1 {color: #000 !important; background: #d4e0eb !important;}
+.jt-theme-background-d2 {color: #000 !important; background: #cad6e1 !important;}
+
 .jt-theme-gradient {color: #fff !important; background: linear-gradient(to right, #897ff3, #55b7f7) !important;}
 .jt-theme-purple {color: #fff !important; background-color:#897ff3 !important}
 .jt-theme-blue {color: #fff !important; background-color:#55b7f7 !important}
+
+.jt-text-pastel-d3 {color: #abc4ff !important;}
+.jt-text-pastel-d2 {color: #b6ccfe !important;}
+.jt-text-pastel-d1 {color: #c1d3fe !important;}
+.jt-text-pastel    {color: #ccdbfd !important;}
+.jt-text-pastel-l1 {color: #d7e3fc !important;}
+.jt-text-pastel-l2 {color: #e2eafc !important;}
+.jt-text-pastel-l3 {color: #edf2fb !important;}
+
+.jt-pastel-d3 {color: #000 !important; background: #abc4ff !important;}
+.jt-pastel-d2 {color: #000 !important; background: #b6ccfe !important;}
+.jt-pastel-d1 {color: #000 !important; background: #c1d3fe !important;}
+.jt-pastel    {color: #000 !important; background: #ccdbfd !important;}
+.jt-pastel-l1 {color: #000 !important; background: #d7e3fc !important;}
+.jt-pastel-l2 {color: #000 !important; background: #e2eafc !important;}
+.jt-pastel-l3 {color: #000 !important; background: #edf2fb !important;}

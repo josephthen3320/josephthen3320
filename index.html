@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"-->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" type="text/css">
+
     <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     body, html {
@@ -162,15 +164,17 @@
                 <h2>About me</h2>
             </header>
             <div class="w3-container w3-padding-32 jt-theme-background">
-                <div class="w3-container w3-third">
-                    <img src="img/placeholder/blanket.png" style="width: 100%;">
+                <div class="w3-container w3-third w3-center">
+                    <!--img src="img/placeholder/blanket.png" style="width: 100%;"-->
+                    <i class="fa-duotone fa-circle-user" style="font-size: 200px; --fa-primary-color: #edf2fb; --fa-secondary-color: #abc4ff;"></i>
                 </div>
                 <div class="w3-twothird w3-container">
-                    <h4>Joseph M. Thenara</h4>
-                    <h6>B.Sc. (Hons) Computer Science with Artificial Intelligence</h6>
+                    <h2 style="font-weight: 700">JOSEPH M. THENARA</h2>
+                    <h6 style="font-weight: 300">XR Developer &nbsp;&nbsp; | &nbsp;&nbsp; Computer Scientist &nbsp;&nbsp; | &nbsp;&nbsp; Graphic Designer</h6>
                 </div>
+
                 <div class="w3-container">
-                    <div class="w3-center w3-row w3-medium w3-padding-16" style="font-weight: 600;">
+                    <div class="w3-center w3-row w3-medium w3-padding-16 w3-padding-top-64" style="font-weight: 600;">
                         <a href="javascript:void(0)" onclick="openProfileTab(event, 'profile-intro')" style=" text-decoration: none;" class="profile-tab highlight-hover highlight-text">
                             SELF INTRODUCTION
                         </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -180,29 +184,33 @@
                         <a href="javascript:void(0)" onclick="openProfileTab(event, 'profile-exp')" style=" text-decoration: none;" class="profile-tab highlight-hover">
                             EXPERIENCES
                         </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="javascript:void(0)" onclick="openProfileTab(event, 'profile-xxx')" style=" text-decoration: none;" class="profile-tab highlight-hover">
-                            GRAPHIC DESIGNS
+                        <a href="javascript:void(0)" onclick="openProfileTab(event, 'profile-msc')" style=" text-decoration: none;" class="profile-tab highlight-hover">
+                            MISCELLANEOUS
                         </a>
                     </div>
 
                     <div> <!-- Profile Contents -->
-                        <div class="w3-container profile-content w3-animate-opacity" id="profile-intro" style="display: block;">
-                            <p class="w3-justify w3-small">
-                                I'm an enthusiast in the field of immersive and educational technology, mainly looking for new ways to use technologies such as virtual reality (VR) or mixed reality (MR) in the learning process. Since the pandemic hits our world, technologies that could connect people around the globe in the comfort of their own bedroom has been sought after, and I believe that immersive technology is one of the answer. To that end, I have been involved in the research, development, and implementation of these technologies specifically for digital transformation of teaching and learning in the University of Nottingham Ningbo China.
-                                <br><br>
-                                Having been living overseas for almost half of my life, I am able to see in many different perspectives and come up with novel ideas by merging the best of the cultures I am familiar with. One unique experience regarding this was being "stuck" in my campus in a foreign country, due to the ongoing COVID-19 pandemic. Despite that, I have been able to turn around the situation and thrive. One of my strong suit is being able to adapt virtually anywhere with little to no issue, even given extreme circumstances!
-                                <br><br>
-                                My educational background as a computer scientist has given me exposure to many interesting challenges, and on the way, developed my algorithmic problem solving skill - that is to find a step-by-step most efficient method to solve a problem. I especially enjoy developing on Unity. Being able to breathe life to a list of requirements and see how users enjoy my application is one of the greatest delight.
-                                <br><br>
-                                I am also experienced in Software Engineering (SE), having taken several projects and internships during my university time. This has exposed me to a plethora of valuable lessons, experience, and skills, such as managing an SE team, managing stakeholder, software development, and requirements engineering, amongst plenty other.
-                                <br><br>
-                                In my personal time, I love reading, traveling, and sleeping. Reading for me is a process of self-reflection and self-improvement. Traveling is a way to get out and experience new sights. Sleeping being the most valuable thing, because I can only function with enough sleep and don't even think about talking to me before I had my morning cup of coffee (no, seriously!)
-                            </p>
+                        <!-- INTRODUCTION PROFILE CONTENT -->
+                        <div class="w3-container profile-content" id="profile-intro" style="display: block;">
+                            <div class="w3-container w3-padding-16 jt-theme-background-d1">
+                                <p class="w3-justify w3-small w3-animate-opacity">
+                                    I'm an enthusiast in the field of immersive and educational technology, mainly looking for new ways to use technologies such as virtual reality (VR) or mixed reality (MR) in the learning process. Since the pandemic hits our world, technologies that could connect people around the globe in the comfort of their own bedroom has been sought after, and I believe that immersive technology is one of the answer. To that end, I have been involved in the research, development, and implementation of these technologies specifically for digital transformation of teaching and learning in the University of Nottingham Ningbo China.
+                                    <br><br>
+                                    Having been living overseas for almost half of my life, I am able to see in many different perspectives and come up with novel ideas by merging the best of the cultures I am familiar with. One unique experience regarding this was being "stuck" in my campus in a foreign country, due to the ongoing COVID-19 pandemic. Despite that, I have been able to turn around the situation and thrive. One of my strong suit is being able to adapt virtually anywhere with little to no issue, even given extreme circumstances!
+                                    <br><br>
+                                    My educational background as a computer scientist has given me exposure to many interesting challenges, and on the way, developed my algorithmic problem solving skill - that is to find a step-by-step most efficient method to solve a problem. I especially enjoy developing on Unity. Being able to breathe life to a list of requirements and see how users enjoy my application is one of the greatest delight.
+                                    <br><br>
+                                    I am also experienced in Software Engineering (SE), having taken several projects and internships during my university time. This has exposed me to a plethora of valuable lessons, experience, and skills, such as managing an SE team, managing stakeholder, software development, and requirements engineering, amongst plenty other.
+                                    <br><br>
+                                    In my personal time, I love reading, traveling, and sleeping. Reading for me is a process of self-reflection and self-improvement. Traveling is a way to get out and experience new sights. Sleeping being the most valuable thing, because I can only function with enough sleep and don't even think about talking to me before I had my morning cup of coffee (no, seriously!)
+                                </p>
+                            </div>
                         </div>
 
+                        <!-- EDUCATION PROFILE CONTENT -->
                         <div class="w3-container profile-content" id="profile-edu" style="display: none;">
                             <div class="w3-container w3-display-container w3-padding-16 jt-theme-background-d1">
-                                <div class="w3-twothird w3-container">
+                                <div class="w3-twothird w3-container w3-animate-opacity">
                                     <span class="w3-text-black w3-medium" style="font-weight: 700;">
                                     UNIVERSITY OF NOTTINGHAM
                                     </span><br>
@@ -213,12 +221,12 @@
                                     </span>
                                     <br>
                                 </div>
-                                <div class="w3-third w3-container">
+                                <div class="w3-third w3-container w3-animate-opacity">
                                     <img src="img/logos/UoN_logo.png" class="" style="width: 80%;">
                                 </div>
                             </div>
                             <div class="w3-container w3-display-container w3-padding-16 jt-theme-background-d1">
-                                <div class="w3-twothird w3-container">
+                                <div class="w3-twothird w3-container w3-animate-opacity">
                                     <span class="w3-text-black w3-medium" style="font-weight: 700;">
                                     DESHENG SCHOOL (INTERNATIONAL)
                                     </span><br>
@@ -235,12 +243,12 @@
                                         <i class="fa-solid fa-award"></i>&nbsp;&nbsp; Desheng IBDP Scholarship
                                     </span>
                                 </div>
-                                <div class="w3-third w3-container">
+                                <div class="w3-third w3-container w3-animate-opacity">
                                     <img src="img/logos/DSI_logo.png" class="" style="width: 80%;">
                                 </div>
                             </div>
                             <div class="w3-container w3-display-container w3-padding-16 jt-theme-background-d1">
-                                <div class="w3-twothird w3-container">
+                                <div class="w3-twothird w3-container w3-animate-opacity">
                                     <span class="w3-text-black w3-medium" style="font-weight: 700;">
                                     GUANGDONG SHUNDE DESHENG SCHOOL (IED)
                                     </span><br>
@@ -256,18 +264,176 @@
                                         <i class="fa-solid fa-award"></i>&nbsp;&nbsp; Outstanding Cambridge Learner Award (High Achievement)
                                     </span>
                                 </div>
-                                <div class="w3-third w3-container">
+                                <div class="w3-third w3-container w3-animate-opacity">
                                     <img src="img/logos/GSDS_logo.png" class="" style="width: 80%;">
                                 </div>
                             </div>
                         </div>
 
+                        <!-- EXPERIENCE PROFILE CONTENT -->
                         <div class="w3-container profile-content" id="profile-exp" style="display: none;">
+                            <div class="w3-container w3-padding-16">
+                                <div class="w3-container w3-padding-16 jt-theme-background-d1">
+                                    <div class="w3-container w3-quarter w3-center w3-border-right w3-border-blue">
+                                        <span class="w3-xxlarge" style="font-weight: 700;">2022</span><br>
+                                        <span class="w3-small" style="font-weight: 500;">October 2020 - Present</span>
+                                    </div>
+
+                                    <div class="w3-container w3-threequarter">
+                                        <div class="w3-padding-small">
+                                            <span class="w3-large" style="font-weight: 700;">V-ROOM LAB</span><br>
+                                            <span class="w3-small" style="font-weight: 300;">University of Nottingham Ningbo China (UNNC)</span>
+
+                                            <button class="w3-medium w3-button w3-block" style="font-weight: 500;" onclick="accordExperience('exp-vroom-coordinator', 'btn-VR-coordinator', this)">
+                                                <span class="w3-left">
+                                                    <b>Coordinator</b>, Research and Development (RND) Division &nbsp;&nbsp;<i class="fa-solid fa-caret-up" id="btn-VR-coordinator"></i>
+                                                </span>
+                                            </button>
+                                            <div class="w3-container w3-padding-small jt-theme-background w3-hide" id="exp-vroom-coordinator">
+                                                <ul class="w3-ul">
+                                                    <li>Provided leadership and supervision for the division.</li>
+                                                    <li>Coordinated research efforts for the project, directly responsible to the Project Investigator (PI).</li>
+                                                    <li>Organised regular division functions, including research sessions, publication writings, skill trainings, etc.</li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="w3-padding-small">
+                                            <button class="w3-medium w3-button w3-block" style="font-weight: 500;" onclick="accordExperience('exp-vroom-lead', 'btn-VR-lead', this)">
+                                                <span class="w3-left">
+                                                    <b>On-Site Team Lead</b>, RND Division, TS Division &nbsp;&nbsp;<i class="fa-solid fa-caret-up" id="btn-VR-lead"></i>
+                                                </span>
+                                            </button>
+                                            <div class="w3-container w3-padding-16 jt-theme-background w3-hide" id="exp-vroom-lead">
+                                                <ul class="w3-ul">
+                                                    <li>Provided leadership, coordination, and support for on-site team members.</li>
+                                                    <li>Coordinated communications and task delegations between on-site and remote team members.</li>
+                                                    <li>Managed and maintained the on-site V-ROOM lab room and hardware equipment.</li>
+                                                    <li>Lead the software implementation on the on-site VR/AR/MR hardware devices.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="w3-padding-small">
+                                            <button class="w3-medium w3-button w3-block" style="font-weight: 500;" onclick="accordExperience('exp-vroom-xrdev', 'btn-VR-xrdev', this)">
+                                                <span class="w3-left">
+                                                    <b>XR Developer</b>, Technology and Software (TS) Division &nbsp;&nbsp;<i class="fa-solid fa-caret-up" id="btn-VR-xrdev"></i>
+                                                </span>
+                                            </button>
+                                            <div class="w3-container w3-padding-16 jt-theme-background w3-hide" id="exp-vroom-xrdev">
+                                                <ul class="w3-ul">
+                                                    <li>Co-developed multiple VR, AR, and MR applications using Unity3D, C#, and other SDKs (SteamVR, Microsoft Mixed Reality Toolkit (MRTK), Vuforia, etc.).</li>
+                                                    <li>Conducted testing and debugging of solutions on various devices and platforms, including SteamVR, HTC Vive, Microsoft HoloLens 2, and Android.</li>
+                                                    <li>Worked as part of a team to develop creative solutions to a set of user requirements.</li>
+                                                    <li>Provided IT, technical, and lab support, including troubleshooting, hardware management and maintenance, equipment setup, etc.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w3-container w3-padding-16">
+                                <div class="w3-container w3-padding-16 jt-theme-background-d1">
+                                    <div class="w3-container w3-quarter w3-center w3-border-right w3-border-blue">
+                                        <span class="w3-xxlarge" style="font-weight: 700;">2022</span><br>
+                                        <span class="w3-small w3-right-align" style="font-weight: 500;">May - August 2022</span>
+                                    </div>
+                                    <div class="w3-container w3-threequarter">
+                                        <span class="w3-large" style="font-weight: 700;">SMART FIREFIGHTING LAB</span><br>
+                                        <span class="w3-small" style="font-weight: 300;">China Beacons Institute, UNNC</span>
+
+                                        <div class="w3-padding-small">
+                                            <button class="w3-medium w3-button w3-block" style="font-weight: 500;" onclick="accordExperience('exp-cbi-dev', 'btn-cbi-dev', this)">
+                                                <span class="w3-left">
+                                                    <b>VR & MR Developer</b>, Smart Firefighting Lab &nbsp;&nbsp;<i class="fa-solid fa-caret-up" id="btn-cbi-dev"></i>
+                                                </span>
+                                            </button>
+                                            <div class="w3-container w3-padding-16 jt-theme-background w3-hide" id="exp-cbi-dev">
+                                                <ul class="w3-ul">
+                                                    <li>Developed VR & MR applications using Unity3D and C#.</li>
+                                                    <li>Provided VR/MR training for supervisor and fellow student interns.</li>
+                                                    <li>Provided lab and technical support, incl. troubleshooting and hardware management.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <script>
+                                function accordExperience(id, btn, evt) {
+                                    var x = document.getElementById(id);
+                                    var y = document.getElementById(btn);
+                                    if (x.className.indexOf("w3-show") == -1) {
+                                        x.className += " w3-show";
+                                    } else {
+                                        x.className = x.className.replace(" w3-show", "");
+                                    }
+                                    if (y.className.indexOf(" fa-caret-down") == -1) {
+                                        y.className = y.className.replace(" fa-caret-up", " fa-caret-down");
+                                    } else {
+                                        y.className = y.className.replace(" fa-caret-down", " fa-caret-up");
+                                    }
+                                    if (evt.className.indexOf("jt-theme-background-d2") == -1) {
+                                        evt.className += " jt-theme-background-d2";
+                                    } else {
+                                        evt.className = evt.className.replace(" jt-theme-background-d2", "");
+                                    }
+                                }
+                            </script>
 
                         </div>
 
-                        <div class="w3-container profile-content" id="profile-xxx" style="display: none;">
-
+                        <div class="w3-container profile-content" id="profile-msc" style="display: none;">
+                            <div class="w3-container w3-padding-16 jt-theme-background-d1">
+                                <div class="w3-container w3-padding-16">
+                                    <span class="w3-medium" style="font-weight: 700;">LANGUAGES</span><br><br>
+                                    <div class="jt-pastel-l3 w3-round-large">
+                                        <div class="w3-container w3-center jt-pastel-d2 w3-padding-small w3-round-large" style="font-weight: 500; width: 100%;">
+                                            English
+                                        </div>
+                                    </div><br>
+                                    <div class="jt-pastel-l3 w3-round-large">
+                                        <div class="w3-container w3-center jt-pastel-d2 w3-padding-small w3-round-large" style="font-weight: 500; width: 100%;">
+                                            Bahasa Indonesia
+                                        </div>
+                                    </div><br>
+                                    <div class="jt-pastel-l3 w3-round-large">
+                                        <div class="w3-container w3-center jt-pastel-d2 w3-padding-small w3-round-large" style="font-weight: 500; width: 50%;">
+                                            Mandarin Chinese
+                                        </div>
+                                    </div><br>
+                                    <div class="jt-pastel-l3 w3-round-large">
+                                        <div class="w3-container w3-center jt-pastel-d2 w3-padding-small w3-round-large" style="font-weight: 500; width: 20%;">
+                                            Japanese
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <span class="w3-medium" style="font-weight: 700;">in-progress</span>&nbsp;&nbsp;|&nbsp;&nbsp; Cantonese, Spanish, German
+                                </div>
+                                <hr/>
+                                <div class="w3-container w3-padding-16">
+                                    <span class="w3-medium" style="font-weight: 700;">HOBBIES</span>
+                                    <div class="w3-container">
+                                        <div class="w3-row w3-center w3-padding-32">
+                                            <i class="w3-col m3 fa-solid fa-plane w3-xxxlarge"></i>
+                                            <i class="w3-col m3 fa-solid fa-camera w3-xxxlarge"></i>
+                                            <i class="w3-col m3 fa-solid fa-bicycle w3-xxxlarge"></i>
+                                            <i class="w3-col m3 fa-solid fa-kitchen-set w3-xxxlarge"></i>
+                                        </div>
+                                        <div class="w3-row w3-center w3-padding-32">
+                                            <i class="w3-col m3 fa-solid fa-person-swimming w3-xxxlarge"></i>
+                                            <i class="w3-col m3 fa-solid fa-computer w3-xxxlarge"></i>
+                                            <i class="w3-col m3 fa-solid fa-music w3-xxxlarge"></i>
+                                            <i class="w3-col m3 fa-solid fa-telescope w3-xxxlarge"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -291,8 +457,10 @@
                 }
             </script>
 
-            <footer class="w3-container w3-teal">
-                <p>Footer fucking content</p>
+            <footer class="w3-container jt-pastel-d3 w3-center">
+                <p class="jt-text-pastel-d2 w3-wide">
+                    <i class="fa-solid fa-cat"></i><i class="fa-solid fa-crow"></i><i class="fa-solid fa-dog"></i><i class="fa-solid fa-dove"></i>
+                </p>
             </footer>
         </div>
     </div>
