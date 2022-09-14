@@ -34,3 +34,10 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.jt-theme-background {color: #000 !important; background: #e2ecf7 !important;}
+.jt-theme-background-d1 {color: #000 !important; background: #d4e0eb
+}
+.jt-theme-gradient {color: #fff !important; background: linear-gradient(to right, #897ff3, #55b7f7) !important;}
+.jt-theme-purple {color: #fff !important; background-color:#897ff3 !important}
+.jt-theme-blue {color: #fff !important; background-color:#55b7f7 !important}
