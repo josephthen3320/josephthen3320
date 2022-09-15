@@ -184,7 +184,7 @@
         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
             <header class="w3-container jt-theme-gradient">
                 <span onclick="document.getElementById('profile-modal').style.display = 'none'"
-                      class="w3-button w3-display-topright">&times;</span>
+                      class="w3-button w3-xlarge w3-display-topright">&times;</span>
                 <h2>About me</h2>
             </header>
             <div class="w3-container w3-padding-32 jt-theme-background">
@@ -680,22 +680,22 @@
     <!-- Portfolio Tabs -->
     <div class="w3-center w3-row w3-medium w3-padding-16" style="font-weight: 600;">
         <a href="javascript:void(0)" onclick="openPortfolio(event, 'immersive')" style=" text-decoration: none;" class="tablink highlight-hover highlight-text">
-            VR/AR/MR
+            XR DEVS
         </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="javascript:void(0)" onclick="openPortfolio(event, 'photos')" style=" text-decoration: none;" class="tablink highlight-hover">
-            PHOTOGRAPHY
+            PHOTOS
         </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="javascript:void(0)" onclick="openPortfolio(event, 'videos')" style=" text-decoration: none;" class="tablink highlight-hover">
             VIDEOS
         </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="javascript:void(0)" onclick="openPortfolio(event, 'designs')" style=" text-decoration: none;" class="tablink highlight-hover">
-            GRAPHIC DESIGNS
+            DESIGNS
         </a>
     </div>
     <br><br>
 
     <div class="w3-container portfolio-content" id="immersive" style="display: block;">
-        <!-- Corporate Video -->
+        <!-- MR FTS Video -->
         <div class="w3-row w3-padding-32 w3-animate-right">
             <div class="w3-col m8 w3-padding-large">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9BV7fYqjp3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -724,6 +724,79 @@
                 </p>
             </div>
         </div>
+
+        <div class="w3-row w3-padding-32 w3-animate-left">
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m4 w3-hide-small w3-padding-large">
+                <div class="w3-text-black w3-right-align">
+                    <span class="w3-center w3-small" style="font-weight: 300;">MIXED REALITY</span><br>
+                    <span class="w3-center w3-large highlight-hover" style="font-weight: 500;"><b>HOLOGRAPHIC POKEMON TRADING CARD GAME (TCG)</b></span><br>
+                    <span class="w3-tiny">
+                        <i class="fa-solid fa-vr-cardboard"></i>&nbsp;&nbsp;Microsoft HoloLens 2&nbsp;&nbsp;
+                        <i class="fa-solid fa-pen"></i>&nbsp;&nbsp;Unity3D + MRTK
+                        <br>work-in-progress &nbsp;&nbsp;|&nbsp;&nbsp; 2022
+                    </span>
+                </div>
+                <p class="w3-medium w3-justify" style="font-weight: 400; line-height: 150%">
+                    An ambitious project to re-create and augment the classic Pokemon TCG with MR technologies through
+                    the HoloLens2. This project aims augment TCG to provide players with fantastical, beyond-reality
+                    TCG experience.
+
+                </p>
+            </div>
+
+            <div class="w3-col m8 w3-padding-large">
+                <div class="w3-content w3-display-container">
+                    <img src="img/mr_hptcg-01.png" class="hptcg-slides w3-animate-opacity" style="width: 100%;" />
+                    <img src="img/mr_hptcg-02.gif" class="hptcg-slides w3-animate-opacity" style="width: 100%;" />
+                    <img src="img/mr_hptcg-03.png" class="hptcg-slides w3-animate-opacity" style="width: 100%;" />
+                    <img src="img/mr_hptcg-04.png" class="hptcg-slides w3-animate-opacity" style="width: 100%;" />
+
+                    <!--button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button-->
+                </div>
+            </div>
+
+            <script>
+                var slideIdx = 0;
+                //showDivs(slideIdx);
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("hptcg-slides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIdx++;
+                    if (slideIdx > x.length) {slideIdx = 1}
+                    x[slideIdx - 1].style.display = "block";
+
+                    if (slideIdx == 2) {
+                        setTimeout(carousel, 10000);
+                    } else {
+                        setTimeout(carousel, 3000);
+                    }
+                }
+
+                function plusDivs(n) {
+                    showDivs(slideIdx += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("hptcg-slides");
+                    if (n > x.length) {slideIdx = 1}
+                    if (n < 1) {slideIdx = x.length}
+                    for (i = 0; i < x.length; i++){
+                        x[i].style.display = "none";
+                    }
+                    x[slideIdx - 1].style.display = "block";
+                }
+            </script>
+
+        </div>
+
     </div>
 
     <div class="w3-container w3-display-container portfolio-content w3-padding-64" id="photos" style="display: none;">
@@ -841,6 +914,8 @@
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 </div>
+
+<hr>
 
 <!-- Publications SECTION -->
 <div class="w3-content w3-container w3-padding-64" id="publications">
@@ -1228,49 +1303,18 @@
     </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
+
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-64 highlight">
+    <span class="w3-xxlarge">
+        Congrats, you scrolled to the bottom of my page!
+    </span><br>
+    <span class="w3-medium">
+        Since you did, why not get in touch with me while at it?<br>: )
+    </span>
 </div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
-
 <!-- Footer -->
-<footer class="w3-center vr-color-d5 w3-padding-64">
+<footer class="w3-center w3-padding-128 w3-black w3-container">
   <!--a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a-->
   <div class="w3-xlarge w3-section">
     <i class="fa-brands fa-facebook-f w3-hover-opacity"></i> &nbsp;&nbsp;&nbsp;&nbsp;
