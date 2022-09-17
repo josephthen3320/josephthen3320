@@ -26,6 +26,10 @@
     -webkit-text-fill-color: transparent;
 }
 
+.highlight-hover-object:hover{
+    background: linear-gradient(to right, #897ff3, #55b7f7);
+}
+
 .highlight-text{
     background: linear-gradient(45deg, #897ff3, #55b7f7);
     /*background: ;*/

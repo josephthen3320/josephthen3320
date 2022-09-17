@@ -694,6 +694,7 @@
     </div>
     <br><br>
 
+    <!-- XR PORTFOLIO CONTENT -->
     <div class="w3-container portfolio-content" id="immersive" style="display: block;">
         <!-- MR FTS Video -->
         <div class="w3-row w3-padding-32 w3-animate-right">
@@ -759,7 +760,7 @@
             </div>
 
             <script>
-                var slideIdx = 0;
+                var hptcg_slideIdx = 0;
                 //showDivs(slideIdx);
                 carousel();
 
@@ -769,30 +770,15 @@
                     for (i = 0; i < x.length; i++) {
                         x[i].style.display = "none";
                     }
-                    slideIdx++;
-                    if (slideIdx > x.length) {slideIdx = 1}
-                    x[slideIdx - 1].style.display = "block";
+                    hptcg_slideIdx++;
+                    if (hptcg_slideIdx > x.length) {hptcg_slideIdx = 1}
+                    x[hptcg_slideIdx - 1].style.display = "block";
 
-                    if (slideIdx == 2) {
+                    if (hptcg_slideIdx == 2) {
                         setTimeout(carousel, 10000);
                     } else {
                         setTimeout(carousel, 3000);
                     }
-                }
-
-                function plusDivs(n) {
-                    showDivs(slideIdx += n);
-                }
-
-                function showDivs(n) {
-                    var i;
-                    var x = document.getElementsByClassName("hptcg-slides");
-                    if (n > x.length) {slideIdx = 1}
-                    if (n < 1) {slideIdx = x.length}
-                    for (i = 0; i < x.length; i++){
-                        x[i].style.display = "none";
-                    }
-                    x[slideIdx - 1].style.display = "block";
                 }
             </script>
 
@@ -800,11 +786,207 @@
 
     </div>
 
-    <div class="w3-container w3-display-container portfolio-content w3-padding-64" id="photos" style="display: none;">
+    <!-- PHOTOGRAPHY PORTFOLIO CONTENT -->
+    <div class="w3-container w3-display-container portfolio-content" id="photos" style="display: none;">
 
-        <div class="w3-container highlight w3-card-4 w3-display-middle w3-padding-16">
-            <span class="w3-xlarge w3-text-white" style="font-weight: 700">Coming soon, I promise!</span>
+        <!-- OUT WINDOWS SERIES -->
+        <div class="w3-row w3-padding-32 w3-animate-left">
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m4 w3-hide-small w3-padding-large">
+                <div class="w3-text-black w3-right-align">
+                    <span class="w3-center w3-small" style="font-weight: 300;">PHOTO SERIES</span><br>
+                    <span class="w3-center w3-large highlight-hover" style="font-weight: 500;"><b>OUT OF THE WINDOW</b></span><br>
+                    <span class="w3-tiny">
+                        <i class="fa-solid fa-camera"></i>&nbsp;&nbsp;Mi 10T Pro&nbsp;&nbsp;
+                    </span><br>
+                </div>
+                <p class="w3-medium w3-justify" style="font-weight: 400; line-height: 150%">
+                    Mobile photography set "Out of the Window" showcases the different hues of scenery outside of my
+                    bedroom window.
+                </p>
+            </div>
+
+            <div class="w3-col m8 w3-padding-large">
+                <div class="w3-content w3-display-container">
+                    <img class="photo-windows " src="img/photos/window-scene-01.jpg" width="100%">
+                    <img class="photo-windows " src="img/photos/window-scene-02.jpg" width="100%">
+                    <img class="photo-windows " src="img/photos/window-scene-03.jpg" width="100%">
+                    <img class="photo-windows " src="img/photos/window-scene-04.jpg" width="100%">
+                    <img class="photo-windows " src="img/photos/window-scene-05.jpg" width="100%">
+
+                    <div class="w3-display-bottommiddle w3-padding-small w3-text-white">
+                        <i class="notch fa-regular fa-circle-small"></i>
+                        <i class="notch fa-regular fa-circle-small"></i>
+                        <i class="notch fa-regular fa-circle-small"></i>
+                        <i class="notch fa-regular fa-circle-small"></i>
+                        <i class="notch fa-regular fa-circle-small"></i>
+                    </div>
+
+                    <button class="w3-button w3-text-white highlight-hover-object w3-display-bottomleft" onclick="plusDivWindow(-1)">&#10094;</button>
+                    <button class="w3-button w3-text-white highlight-hover-object w3-display-bottomright" onclick="plusDivWindow(1)">&#10095;</button>
+                </div>
+            </div>
+            <script>
+                var hopeSlideIdx = 1;
+                showDivWindow(hopeSlideIdx);
+
+                function plusDivWindow(n) {
+                    showDivWindow(hopeSlideIdx += n);
+                }
+
+                function showDivWindow(n) {
+                    var i;
+                    var x = document.getElementsByClassName("photo-windows");
+                    var notch = document.getElementsByClassName("notch");
+
+                    if (n > x.length) {hopeSlideIdx = 1}
+                    if (n < 1) {hopeSlideIdx = x.length}
+                    for (i = 0; i < x.length; i++){
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < notch.length; i++) {
+                        notch[i].className = notch[i].className.replace(" fa-solid", " fa-regular");
+                    }
+                    x[hopeSlideIdx - 1].style.display = "block";
+                    notch[hopeSlideIdx - 1].className = notch[hopeSlideIdx -1].className.replace(" fa-regular", " fa-solid");
+                }
+            </script>
         </div>
+
+        <!-- NOTTS HOPE SERIES -->
+        <div class="w3-row w3-padding-32 w3-animate-left">
+            <div class="w3-col m8 w3-padding-large">
+                <div class="w3-content w3-display-container">
+                    <img class="photo-hope " src="img/photos/notts_hope_01.jpg" width="100%">
+                    <img class="photo-hope " src="img/photos/notts_hope_02.jpg" width="100%">
+                    <img class="photo-hope " src="img/photos/notts_hope_03.jpg" width="100%">
+                    <img class="photo-hope " src="img/photos/notts_hope_04.jpg" width="100%">
+                    <img class="photo-hope " src="img/photos/notts_hope_05.jpg" width="100%">
+                    <img class="photo-hope " src="img/photos/notts_hope_06.jpg" width="100%">
+
+                    <div class="w3-display-bottommiddle w3-padding-small w3-text-white">
+                        <i class="notch2 fa-regular fa-circle-small"></i>
+                        <i class="notch2 fa-regular fa-circle-small"></i>
+                        <i class="notch2 fa-regular fa-circle-small"></i>
+                        <i class="notch2 fa-regular fa-circle-small"></i>
+                        <i class="notch2 fa-regular fa-circle-small"></i>
+                        <i class="notch2 fa-regular fa-circle-small"></i>
+                    </div>
+
+                    <button class="w3-button w3-text-white highlight-hover-object w3-display-bottomleft" onclick="plusDivHope(-1)">&#10094;</button>
+                    <button class="w3-button w3-text-white highlight-hover-object w3-display-bottomright" onclick="plusDivHope(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m4 w3-hide-small w3-padding-large">
+                <div class="w3-text-black w3-right-align">
+                    <span class="w3-center w3-small" style="font-weight: 300;">TWIN PHOTO SERIES</span><br>
+                    <span class="w3-center w3-large highlight-hover" style="font-weight: 500;"><b>NOTTINGHAM ~HOPE~</b></span><br>
+                    <span class="w3-tiny">
+                        <i class="fa-solid fa-camera"></i>&nbsp;&nbsp;Redmi Note 7 Pro&nbsp;&nbsp;
+                    </span><br>
+                </div>
+                <p class="w3-medium w3-justify" style="font-weight: 400; line-height: 150%">
+                    Mobile photography set "Out of the Window" showcases the different hues of scenery outside of my
+                    bedroom window.
+                    <br><br>
+                    <span class="w3-small">
+                        <i class="fa-solid fa-award"></i>&nbsp;&nbsp;&nbsp;&nbsp;Distinguished Final Year Project Award<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="w3-tiny">Awarded by the School of Computer Science, UNNC<br></span>
+                    </span>
+                </p>
+            </div>
+            <script>
+                var hopeSlideIdx = 1;
+                showDivHope(hopeSlideIdx);
+
+                function plusDivHope(n) {
+                    showDivHope(hopeSlideIdx += n);
+                }
+
+                function showDivHope(n) {
+                    var i;
+                    var x = document.getElementsByClassName("photo-hope");
+                    var notch = document.getElementsByClassName("notch2");
+
+                    if (n > x.length) {hopeSlideIdx = 1}
+                    if (n < 1) {hopeSlideIdx = x.length}
+                    for (i = 0; i < x.length; i++){
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < notch.length; i++) {
+                        notch[i].className = notch[i].className.replace(" fa-solid", " fa-regular");
+                    }
+                    x[hopeSlideIdx - 1].style.display = "block";
+                    notch[hopeSlideIdx - 1].className = notch[hopeSlideIdx -1].className.replace(" fa-regular", " fa-solid");
+                }
+            </script>
+        </div>
+
+        <!-- NOTTS BLEAK SERIES -->
+        <div class="w3-row w3-padding-32 w3-animate-left">
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m4 w3-hide-small w3-padding-large">
+                <div class="w3-text-black w3-right-align">
+                    <span class="w3-center w3-small" style="font-weight: 300;">TWIN PHOTO SERIES</span><br>
+                    <span class="w3-center w3-large highlight-hover" style="font-weight: 500;"><b>NOTTINGHAM ~BLEAK~</b></span><br>
+                    <span class="w3-tiny">
+                        <i class="fa-solid fa-camera"></i>&nbsp;&nbsp;Redmi Note 7 Pro&nbsp;&nbsp;
+                    </span><br>
+                </div>
+                <p class="w3-medium w3-justify" style="font-weight: 400; line-height: 150%">
+                    Mobile photography set "Out of the Window" showcases the different hues of scenery outside of my
+                    bedroom window.
+                </p>
+            </div>
+
+            <div class="w3-col m8 w3-padding-large">
+                <div class="w3-content w3-display-container">
+                    <img class="photo-bleak " src="img/photos/notts_bleak_01.jpg" width="100%">
+                    <img class="photo-bleak " src="img/photos/notts_bleak_02.jpg" width="100%">
+                    <img class="photo-bleak " src="img/photos/notts_bleak_03.jpg" width="100%">
+                    <img class="photo-bleak " src="img/photos/notts_bleak_04.jpg" width="100%">
+
+                    <div class="w3-display-bottommiddle w3-padding-small w3-text-white">
+                        <i class="notch3 fa-regular fa-circle-small"></i>
+                        <i class="notch3 fa-regular fa-circle-small"></i>
+                        <i class="notch3 fa-regular fa-circle-small"></i>
+                        <i class="notch3 fa-regular fa-circle-small"></i>
+                    </div>
+
+                    <button class="w3-button w3-text-white highlight-hover-object w3-display-bottomleft" onclick="plusDivBleak(-1)">&#10094;</button>
+                    <button class="w3-button w3-text-white highlight-hover-object w3-display-bottomright" onclick="plusDivBleak(1)">&#10095;</button>
+                </div>
+            </div>
+            <script>
+                var bleakSlideIdx = 1;
+                showDivBleak(bleakSlideIdx);
+
+                function plusDivBleak(n) {
+                    showDivBleak(bleakSlideIdx += n);
+                }
+
+                function showDivBleak(n) {
+                    var i;
+                    var x = document.getElementsByClassName("photo-bleak");
+                    var notch = document.getElementsByClassName("notch3");
+
+                    if (n > x.length) {bleakSlideIdx = 1}
+                    if (n < 1) {bleakSlideIdx = x.length}
+                    for (i = 0; i < x.length; i++){
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < notch.length; i++) {
+                        notch[i].className = notch[i].className.replace(" fa-solid", " fa-regular");
+                    }
+                    x[bleakSlideIdx - 1].style.display = "block";
+                    notch[bleakSlideIdx - 1].className = notch[bleakSlideIdx -1].className.replace(" fa-regular", " fa-solid");
+                }
+            </script>
+        </div>
+
+
 
     </div>
 
@@ -1361,16 +1543,16 @@ function toggleFunction() {
 </body>
 
 <script>
-    const counterUp = window.counterUp.default
+    const counterUp = window.counterUp.default;
 
     const callback = entries => {
         entries.forEach( entry => {
             const el = entry.target
             if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
             counterUp( el, {
-                duration: 1000,
-                delay: 16,
-            } )
+                duration: 2000,
+                delay: 16
+            } );
             el.classList.add( 'is-visible' )
         }
     } )
