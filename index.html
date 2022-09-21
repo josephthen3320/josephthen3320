@@ -155,7 +155,7 @@
     <div class="w3-row">
         <div class="w3-col m6 w3-center w3-padding-large">
             <div class="w3-card-2 w3-hover-opacity-off w3-opacity">
-                <img src="img/placeholder/fuk.png" alt="Alps" height="333">
+                <img src="img/me/jt-profile-photo-01.jpg" alt="Joseph" width="100%">                                        <!-- TODO: Change to background-less profile picture -->
             </div>
         </div>
 
@@ -749,10 +749,20 @@
 
             <div class="w3-col m8 w3-padding-large">
                 <div class="w3-content w3-display-container">
-                    <img src="img/mr_hptcg-01.png" class="hptcg-slides w3-animate-opacity" style="width: 100%;" />
-                    <img src="img/mr_hptcg-02.gif" class="hptcg-slides w3-animate-opacity" style="width: 100%;" />
-                    <img src="img/mr_hptcg-03.png" class="hptcg-slides w3-animate-opacity" style="width: 100%;" />
-                    <img src="img/mr_hptcg-04.png" class="hptcg-slides w3-animate-opacity" style="width: 100%;" />
+                    <img src="img/mr_hptcg-01.png" class="hptcg-slides" style="width: 100%;" />
+                    <img src="img/mr_hptcg-02.gif" class="hptcg-slides" style="width: 100%;" />
+                    <img src="img/mr_hptcg-03.png" class="hptcg-slides" style="width: 100%;" />
+                    <img src="img/mr_hptcg-04.png" class="hptcg-slides" style="width: 100%;" />
+
+                    <div class="w3-display-right w3-container w3-small w3-text-white">
+                        <span class="" onclick="currentDivHPTCG(1)" style="cursor: pointer;"> <i class="xr-notch-1 fa-solid fa-circle"></i></span> <br>
+                        <span class="" onclick="currentDivHPTCG(2)" style="cursor: pointer;"> <i class="xr-notch-1 fa-regular fa-circle"></i></span> <br>
+                        <span class="" onclick="currentDivHPTCG(3)" style="cursor: pointer;"> <i class="xr-notch-1 fa-regular fa-circle"></i></span> <br>
+                        <span class="" onclick="currentDivHPTCG(4)" style="cursor: pointer;"> <i class="xr-notch-1 fa-regular fa-circle"></i></span> <br>
+                    </div>
+
+                    <button class="w3-button w3-text-white highlight-hover-object w3-display-bottomleft" onclick="plusDivHPTCG(-1)">&#10094;</button>
+                    <button class="w3-button w3-text-white highlight-hover-object w3-display-bottomright" onclick="plusDivHPTCG(1)">&#10095;</button>
 
                     <!--button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button-->
@@ -762,7 +772,7 @@
             <script>
                 var hptcg_slideIdx = 0;
                 //showDivs(slideIdx);
-                carousel();
+                //carousel();
 
                 function carousel() {
                     var i;
@@ -782,12 +792,131 @@
                 }
             </script>
 
+            <script>
+                var hptcgIdx = 1;
+                showDivHPTCG(hptcgIdx);
+
+                function currentDivHPTCG(n) {
+                    showDivHPTCG(hptcgIdx = n);
+                }
+
+                function showDivHPTCG(n) {
+                    var i;
+                    var x = document.getElementsByClassName("hptcg-slides");
+                    var dots = document.getElementsByClassName("xr-notch-1");
+
+                    if (n > x.length) {hptcgIdx = 1}
+                    if (n < 1) {hptcgIdx = x.length}
+
+                    for (i = 0; i < x.length; ++i){
+                        x[i].style.display = "none";
+                    }
+
+                    for (i = 0; i < dots.length; ++i) {
+                        dots[i].className = dots[i].className.replace(" fa-solid", " fa-regular");
+                    }
+
+                    x[hptcgIdx - 1].style.display = "block";
+                    dots[hptcgIdx - 1].className = dots[hptcgIdx -1].className.replace(" fa-regular", " fa-solid");
+                }
+
+                function plusDivHPTCG(n) {
+                    showDivHPTCG(hptcgIdx += n);
+                }
+
+                /*
+                function showDivHPTCG(n) {
+                    var i;
+                    var x = document.getElementsByClassName("hptcg-slides");
+                    var notch = document.getElementsByClassName("notch");
+
+                    if (n > x.length) {hptcgIdx = 1}
+                    if (n < 1) {hptcgIdx = x.length}
+                    for (i = 0; i < x.length; i++){
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < notch.length; i++) {
+                        notch[i].className = notch[i].className.replace(" fa-solid", " fa-regular");
+                    }
+                    x[hptcgIdx - 1].style.display = "block";
+                    notch[hptcgIdx - 1].className = notch[hptcgIdx -1].className.replace(" fa-regular", " fa-solid");
+
+                }*/
+            </script>
+
         </div>
 
     </div>
 
     <!-- PHOTOGRAPHY PORTFOLIO CONTENT -->
     <div class="w3-container w3-display-container portfolio-content" id="photos" style="display: none;">
+
+        <!-- INSOMNIAC SERIES -->
+        <div class="w3-row w3-padding-32 w3-animate-left">
+            <div class="w3-col m8 w3-padding-large">
+                <div class="w3-content w3-display-container">
+                    <img class="photo-insomniac " src="img/photos/insomniac-sky-01.jpg" width="100%">
+                    <img class="photo-insomniac " src="img/photos/insomniac-sky-02.jpg" width="100%">
+                    <img class="photo-insomniac " src="img/photos/insomniac-sky-03.jpg" width="100%">
+
+                    <div class="w3-display-bottommiddle w3-padding-small w3-text-white">
+                        <i class="notch4 fa-regular fa-circle-small"></i>
+                        <i class="notch4 fa-regular fa-circle-small"></i>
+                        <i class="notch4 fa-regular fa-circle-small"></i>
+                    </div>
+
+                    <button class="w3-button w3-text-white highlight-hover-object w3-display-bottomleft" onclick="plusDivInsomniac(-1)">&#10094;</button>
+                    <button class="w3-button w3-text-white highlight-hover-object w3-display-bottomright" onclick="plusDivInsomniac(1)">&#10095;</button>
+                </div>
+            </div>
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m4 w3-hide-small w3-padding-large">
+                <div class="w3-text-black">
+                    <span class="w3-center w3-small" style="font-weight: 300;">NIGHT PHOTOGRAPHY</span><br>
+                    <span class="w3-center w3-large highlight-hover" style="font-weight: 500;"><b>INSOMNIAC CAMPUS SKY</b></span><br>
+                    <span class="w3-tiny">
+                        <i class="fa-solid fa-camera"></i>&nbsp;&nbsp;Mi 10T Pro w/ Long Exposure&nbsp;&nbsp;
+                    </span><br>
+                </div>
+                <p class="w3-medium w3-justify" style="font-weight: 400; line-height: 150%">
+                    A set of experimental starry sky night photography using my phone while I was feeling insomniac.
+                    These pictures were taken in low-light areas of my university campus.
+                    <br><br>
+                    I have been a long time fan of laying on the ground at night, admiring the amicable yet mysterious
+                    night sky while pondering for the meaning of my existence. Every time I look up to the sky at night,
+                    I am always reminded how minuscule I am in the grand scheme of the universe. Yet, like how each
+                    stars have their twinkle in the universe, us too have our own place to be in the world.
+                    <br><br>
+                    They turned out pretty awesome!
+                </p>
+            </div>
+
+            <script>
+                var insomniacSlideIdx = 1;
+                showDivInsomniac(insomniacSlideIdx);
+
+                function plusDivInsomniac(n) {
+                    showDivInsomniac(insomniacSlideIdx += n);
+                }
+
+                function showDivInsomniac(n) {
+                    var i;
+                    var x = document.getElementsByClassName("photo-insomniac");
+                    var notch = document.getElementsByClassName("notch4");
+
+                    if (n > x.length) {insomniacSlideIdx = 1}
+                    if (n < 1) {insomniacSlideIdx = x.length}
+                    for (i = 0; i < x.length; i++){
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < notch.length; i++) {
+                        notch[i].className = notch[i].className.replace(" fa-solid", " fa-regular");
+                    }
+                    x[insomniacSlideIdx - 1].style.display = "block";
+                    notch[insomniacSlideIdx - 1].className = notch[insomniacSlideIdx -1].className.replace(" fa-regular", " fa-solid");
+                }
+            </script>
+        </div>
 
         <!-- OUT WINDOWS SERIES -->
         <div class="w3-row w3-padding-32 w3-animate-left">
@@ -880,7 +1009,7 @@
 
             <!-- Hide this text on small devices -->
             <div class="w3-col m4 w3-hide-small w3-padding-large">
-                <div class="w3-text-black w3-right-align">
+                <div class="w3-text-black">
                     <span class="w3-center w3-small" style="font-weight: 300;">TWIN PHOTO SERIES</span><br>
                     <span class="w3-center w3-large highlight-hover" style="font-weight: 500;"><b>NOTTINGHAM ~HOPE~</b></span><br>
                     <span class="w3-tiny">
@@ -888,13 +1017,9 @@
                     </span><br>
                 </div>
                 <p class="w3-medium w3-justify" style="font-weight: 400; line-height: 150%">
-                    Mobile photography set "Out of the Window" showcases the different hues of scenery outside of my
-                    bedroom window.
-                    <br><br>
-                    <span class="w3-small">
-                        <i class="fa-solid fa-award"></i>&nbsp;&nbsp;&nbsp;&nbsp;Distinguished Final Year Project Award<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <span class="w3-tiny">Awarded by the School of Computer Science, UNNC<br></span>
-                    </span>
+                    A twin series with the <em>Nottingham ~Bleak~</em> taken during the start of the COVID-19 Pandemic.
+                    This series was shot one day after the ~Bleak~ series, visualising how hope is always there even if
+                    bleakness was prominent.
                 </p>
             </div>
             <script>
@@ -936,8 +1061,9 @@
                     </span><br>
                 </div>
                 <p class="w3-medium w3-justify" style="font-weight: 400; line-height: 150%">
-                    Mobile photography set "Out of the Window" showcases the different hues of scenery outside of my
-                    bedroom window.
+                    A twin series with the <em>Nottingham ~Hope~</em> taken during the start of the COVID-19 Pandemic.
+                    This series shows the parallelism towards how the pandemic have taken hope away such that the sky
+                    turned bleak.
                 </p>
             </div>
 
@@ -985,8 +1111,6 @@
                 }
             </script>
         </div>
-
-
 
     </div>
 
