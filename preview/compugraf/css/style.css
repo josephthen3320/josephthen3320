@@ -1,0 +1,13 @@
+/* General styles */
+
+@font-face {
+  font-family: "Banjax";
+  src: url("font/banjax-regular.eot");
+  src: url("font/banjax-regular.woff") format("woff"),
+  url("font/banjax-regular.otf") format("opentype"),
+  url("font/banjax-regular.svg#filename") format("svg");
+}
+
+h1 {
+  font-family: "Banjax", Arial, Helvetica, sans-serif ;
+}
